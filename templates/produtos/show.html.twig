@@ -24,7 +24,7 @@
                 <td>{{ produto.quantidade }}</td>
             </tr>
             <tr>
-                <th>Descricao</th>
+                <th>Descricão</th>
                 <td>{{ produto.descricao }}</td>
             </tr>
             <tr>
@@ -34,9 +34,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('produtos_index') }}">back to list</a>
+    <a href="{{ path('produtos_index') }}">Voltar para lista</a>
 
-    <a href="{{ path('produtos_edit', {'id': produto.id}) }}">edit</a>
+    <a href="{{ path('produtos_edit', {'id': produto.id}) }}">editar</a>
 
     {{ include('produtos/_delete_form.html.twig') }}
 {% endblock %}
